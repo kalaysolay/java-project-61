@@ -1,21 +1,18 @@
 package hexlet.code.games;
-
 import hexlet.code.Engine;
-
-import java.util.Arrays;
 import java.util.Random;
 
 public class ProgressionGame {
-    public static final String Task = "What number is missing in the progression?";
+    public static final String TASK = "What number is missing in the progression?";
 
-    public static void startGame(){
+    public static void startGame() {
         String[][] questions = new String[Engine.getQuestionCount()][2];
         int length;
         int firstElement;
         int difference;
         Random rand = new Random();
 
-        for (int i = 0; i<Engine.getQuestionCount(); i++) {
+        for (int i = 0; i < Engine.getQuestionCount(); i++) {
             // генерим число от 5 до 12, это длина прогрессии и количество элементов в массива
             length = rand.nextInt(8) + 5;
             firstElement = rand.nextInt(10); // первый элемент прогрессии от 0 до 10
@@ -38,6 +35,6 @@ public class ProgressionGame {
             questions[i][0] = String.join(" ", progression);
             questions[i][1] = dottedElement;
         }
-        Engine.start(questions, ProgressionGame.Task);
+        Engine.start(questions, ProgressionGame.TASK);
     }
 }

@@ -1,6 +1,9 @@
 package hexlet.code;
-import hexlet.code.games.*;
-
+import hexlet.code.games.Calc;
+import hexlet.code.games.EvenGame;
+import hexlet.code.games.GcdGame;
+import hexlet.code.games.PrimeGame;
+import hexlet.code.games.ProgressionGame;
 import java.util.Scanner;
 
 public class App {
@@ -22,24 +25,19 @@ public class App {
         System.out.println("Your choice: " + choice);
         if (choice == 1) {
             Cli.aksName();
-        }
-        else if (choice == 2) {
+        } else if (choice == 2) {
             Cli.aksName();
             EvenGame.startGame();
-        }
-        else if (choice == 3) {
+        } else if (choice == 3) {
             Cli.aksName();
             Calc.startGame();
-        }
-        else if (choice == 4) {
+        } else if (choice == 4) {
             Cli.aksName();
             GcdGame.startGame();
-        }
-        else if (choice == 5) {
+        } else if (choice == 5) {
             Cli.aksName();
             ProgressionGame.startGame();
-        }
-        else if (choice == 6) {
+        } else if (choice == 6) {
             Cli.aksName();
             PrimeGame.startGame();
         } else {

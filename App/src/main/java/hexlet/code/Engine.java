@@ -22,23 +22,24 @@ public class Engine {
         return questionCount;
     }
 
-    public static void start (String[][] questions, String task){
+    public static void start(String[][] questions, String task) {
         int score = 0;
         System.out.println(task); // приветственная строка для игры
         Scanner scanner = new Scanner(System.in);
         // перебираем весь массив вопросов и выводим сам вопрос и ожидаем ответ
         // затем сравниваем введенное значение и rightAnswer
-        for (int i = 0; i < questionCount; i++){
+        for (int i = 0; i < questionCount; i++) {
             String questionTitle = questions[i][0]; // забираем вопрос из массива
             String rightAnswer = questions[i][1];
             System.out.println("Question: " + questionTitle);
             System.out.print("Your answer: ");
             String answer = scanner.nextLine();
-            if (answer.equals(rightAnswer)){
+            if (answer.equals(rightAnswer)) {
                 System.out.println("Correct!");
                 score++;
             } else {
-                System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + rightAnswer +"'.");
+                System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'"
+                        + rightAnswer + "'.");
                 System.out.println("Let's try again, " + Cli.getName());
                 return; // завершаем работу метода, потому что пользоватеь дал не верный ответ
             }
