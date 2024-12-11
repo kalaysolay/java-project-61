@@ -7,21 +7,16 @@
 
 # ASCIINEMA RECORDS
 ## Calculator
-[![ASCIINEMA CALC GAME]
-(https://asciinema.org/a/kz7MpxjHImzb27YuUS1lM2978)
+[![ASCIINEMA CALC GAME](https://asciinema.org/a/kz7MpxjHImzb27YuUS1lM2978)]
 
 ## Even
-[![ASCIINEMA EVEN GAME]
-(https://asciinema.org/a/tH4khMVjKvYRG7TKs5S2AD5p5)
+[![ASCIINEMA EVEN GAME](https://asciinema.org/a/tH4khMVjKvYRG7TKs5S2AD5p5)]
 
 ## GCD
-[![ASCIINEMA GCD GAME]
-(https://asciinema.org/a/w3GiA8gRcoSbLmA1HG9c0Xbiu)
+[![ASCIINEMA GCD GAME](https://asciinema.org/a/w3GiA8gRcoSbLmA1HG9c0Xbiu)]
 
 ## Progression
-[![ASCIINEMA PROGRESSION GAME]
-(https://asciinema.org/a/Tn9CBo6wZNhFnLDqLCVmb7h3l)
+[![ASCIINEMA PROGRESSION GAME](https://asciinema.org/a/Tn9CBo6wZNhFnLDqLCVmb7h3l)]
 
 ## Prime
-[![ASCIINEMA PRIME GAME]
-(https://asciinema.org/a/4TZNizutVU0olHVsBxv5lBF0e)
+[![ASCIINEMA PRIME GAME](https://asciinema.org/a/4TZNizutVU0olHVsBxv5lBF0e)]
