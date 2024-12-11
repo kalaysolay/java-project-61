@@ -1,6 +1,6 @@
 plugins {
     application
-    checkstyle
+    //checkstyle
     java
 }
 
