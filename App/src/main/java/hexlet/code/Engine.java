@@ -38,7 +38,7 @@ public class Engine {
                 System.out.println("Correct!");
                 score++;
             } else {
-                System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + rightAnswer +"'");
+                System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + rightAnswer +"'.");
                 System.out.println("Let's try again, " + Cli.getName());
                 return; // завершаем работу метода, потому что пользоватеь дал не верный ответ
             }

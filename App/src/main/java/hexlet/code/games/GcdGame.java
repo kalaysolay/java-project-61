@@ -19,7 +19,7 @@ public class GcdGame {
     }
 
     public static int getGcdValue(int firstValue, int secondValue){
-        while (secondValue != 0)ацук {
+        while (secondValue != 0) {
             int temp = secondValue;
             secondValue = firstValue % secondValue;
             firstValue = temp;
