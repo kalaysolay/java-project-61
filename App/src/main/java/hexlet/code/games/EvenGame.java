@@ -23,6 +23,6 @@ public class EvenGame {
                 questions[i][1]  = "no";
             }
         }
-        Engine.start(questions, Calc.Task);
+        Engine.start(questions, EvenGame.Task);
     }
 }

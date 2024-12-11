@@ -15,7 +15,6 @@ public class ProgressionGame {
         int difference;
         Random rand = new Random();
 
-
         for (int i = 0; i<Engine.getQuestionCount(); i++) {
             // генерим число от 5 до 12, это длина прогрессии и количество элементов в массива
             length = rand.nextInt(8) + 5;
@@ -39,6 +38,6 @@ public class ProgressionGame {
             questions[i][0] = String.join(" ", progression);
             questions[i][1] = dottedElement;
         }
-        Engine.start(questions, Calc.Task);
+        Engine.start(questions, ProgressionGame.Task);
     }
 }

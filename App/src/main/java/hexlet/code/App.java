@@ -1,8 +1,5 @@
 package hexlet.code;
-import hexlet.code.games.Calc;
-import hexlet.code.games.EvenGame;
-import hexlet.code.games.GcdGame;
-import hexlet.code.games.ProgressionGame;
+import hexlet.code.games.*;
 
 import java.util.Scanner;
 
@@ -18,6 +15,7 @@ public class App {
                 3 - Calculator
                 4 - GCD
                 5 - Progression
+                6 - Prime
                 0 - Exit
                 """);
         int choice = scanner.nextInt();
@@ -40,6 +38,10 @@ public class App {
         else if (choice == 5) {
             Cli.aksName();
             ProgressionGame.startGame();
+        }
+        else if (choice == 6) {
+            Cli.aksName();
+            PrimeGame.startGame();
         } else {
             System.out.println("Goodbye!");
         }
