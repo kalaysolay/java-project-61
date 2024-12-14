@@ -3,7 +3,7 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class ProgressionGame {
-    public static final String TASK = "What number is missing in the progression?";
+    public static final String DESCRIPTION = "What number is missing in the progression?";
     private static final int PROGRESSIONLENGTHMIN = 5;
     private static final int PROGRESSIONLENGTHMAX = 12;
     private static final int FIRSTELEMENTRANGE = 10;
@@ -37,6 +37,6 @@ public class ProgressionGame {
             questions[i][0] = String.join(" ", progression);
             questions[i][1] = dottedElement;
         }
-        Engine.start(questions, ProgressionGame.TASK);
+        Engine.start(questions, ProgressionGame.DESCRIPTION);
     }
 }
