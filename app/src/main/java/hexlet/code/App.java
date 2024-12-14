@@ -13,7 +13,7 @@ public class App {
     private static final int EVENGAME = 2;
     private static final int CALC = 3;
     private static final int GCDGAME = 4;
-    private static final int PROGRESSIONGAME = 6;
+    private static final int PROGRESSIONGAME = 5;
     private static final int PRIMEGAME = 6;
     public static void main(String[] args) {
 
