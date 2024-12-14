@@ -20,7 +20,7 @@ public class ProgressionGame {
             firstElement = rand.nextInt(FIRSTELEMENTRANGE); // первый элемент прогрессии от 0 до 10
             difference = rand.nextInt(FIRSTELEMENTRANGE) + 1;
 
-            // создаем массив с числами
+            // создаем массив с числами!
             String[] progression = new String[length];
 
             // формируем прогрессию
