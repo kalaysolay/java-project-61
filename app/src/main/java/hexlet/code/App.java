@@ -49,7 +49,7 @@ public class App {
             Cli.aksName();
             PrimeGame.startGame();
         } else if (choice == EXIT) {
-            break;
+            System.out.println("Goodbye");
         } else {
             System.out.println("Goodbye!");
         }
