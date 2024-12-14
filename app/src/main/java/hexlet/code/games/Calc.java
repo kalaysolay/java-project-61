@@ -4,15 +4,16 @@ import java.util.Random;
 
 public class Calc {
     public static final String TASK = "What is the result of the expression?";
-
+    private static final int FIRSTVALUERANGE = 10;
+    private static final int SECONDVALUERANGE = 10;
     public static void startGame() {
         String[][] questions = new String[Engine.getQuestionCount()][2];
         String[] operators = {"+", "-", "*"}; // Массив строк
         Random rand = new Random();
 
         for (int i = 0; i < Engine.getQuestionCount(); i++) {
-            int firstValue = rand.nextInt(10);
-            int secondValue = rand.nextInt(10);
+            int firstValue = rand.nextInt(FIRSTVALUERANGE);
+            int secondValue = rand.nextInt(SECONDVALUERANGE);
             String operator = operators[rand.nextInt(0, operators.length)];
             questions[i][0] = firstValue + " " + operator + " " + secondValue;
             questions[i][1] = String.valueOf(calculate(firstValue, secondValue, operator));

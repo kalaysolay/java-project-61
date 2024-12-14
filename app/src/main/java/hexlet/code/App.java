@@ -7,6 +7,14 @@ import hexlet.code.games.ProgressionGame;
 import java.util.Scanner;
 
 public class App {
+    // это все чтобы от Magic number уйти
+    private static final int EXIT = 0;
+    private static final int GREET = 1;
+    private static final int EVENGAME = 2;
+    private static final int CALC = 3;
+    private static final int GCDGAME = 4;
+    private static final int PROGRESSIONGAME = 6;
+    private static final int PRIMEGAME = 6;
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -23,21 +31,21 @@ public class App {
                 """);
         int choice = scanner.nextInt();
         System.out.println("Your choice: " + choice);
-        if (choice == 1) {
+        if (choice == GREET) {
             Cli.aksName();
-        } else if (choice == 2) {
+        } else if (choice == EVENGAME) {
             Cli.aksName();
             EvenGame.startGame();
-        } else if (choice == 3) {
+        } else if (choice == CALC) {
             Cli.aksName();
             Calc.startGame();
-        } else if (choice == 4) {
+        } else if (choice == GCDGAME) {
             Cli.aksName();
             GcdGame.startGame();
-        } else if (choice == 5) {
+        } else if (choice == PROGRESSIONGAME) {
             Cli.aksName();
             ProgressionGame.startGame();
-        } else if (choice == 6) {
+        } else if (choice == PRIMEGAME) {
             Cli.aksName();
             PrimeGame.startGame();
         } else {

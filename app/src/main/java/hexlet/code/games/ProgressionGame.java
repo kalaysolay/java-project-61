@@ -4,7 +4,9 @@ import java.util.Random;
 
 public class ProgressionGame {
     public static final String TASK = "What number is missing in the progression?";
-
+    private static final int PROGRESSIONLENGTHMIN = 5;
+    private static final int PROGRESSIONLENGTHMAX = 12;
+    private static final int FIRSTELEMENTRANGE = 10;
     public static void startGame() {
         String[][] questions = new String[Engine.getQuestionCount()][2];
         int length;
@@ -14,9 +16,9 @@ public class ProgressionGame {
 
         for (int i = 0; i < Engine.getQuestionCount(); i++) {
             // генерим число от 5 до 12, это длина прогрессии и количество элементов в массива
-            length = rand.nextInt(8) + 5;
-            firstElement = rand.nextInt(10); // первый элемент прогрессии от 0 до 10
-            difference = rand.nextInt(10) + 1;
+            length = rand.nextInt(PROGRESSIONLENGTHMIN, PROGRESSIONLENGTHMAX);
+            firstElement = rand.nextInt(FIRSTELEMENTRANGE); // первый элемент прогрессии от 0 до 10
+            difference = rand.nextInt(FIRSTELEMENTRANGE) + 1;
 
             // создаем массив с числами
             String[] progression = new String[length];
