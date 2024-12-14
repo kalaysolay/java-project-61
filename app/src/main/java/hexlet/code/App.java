@@ -48,6 +48,8 @@ public class App {
         } else if (choice == PRIMEGAME) {
             Cli.aksName();
             PrimeGame.startGame();
+        } else if (choice == EXIT) {
+            break;
         } else {
             System.out.println("Goodbye!");
         }
