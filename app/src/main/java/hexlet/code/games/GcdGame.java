@@ -9,10 +9,10 @@ public class GcdGame {
     private static final int MAXVALUE = 100;
 
     public static void startGame() {
-        String[][] questions = new String[Engine.getQuestionCount()][2];
+        String[][] questions = new String[Engine.QUESTIONSCOUNT][2];
         Random rand = new Random();
 
-        for (int i = 0; i < Engine.getQuestionCount(); i++) {
+        for (int i = 0; i < Engine.QUESTIONSCOUNT; i++) {
             int firstValue = rand.nextInt(MAXVALUE);
             int secondValue = rand.nextInt(MAXVALUE);
             questions[i][0] = firstValue + " " + secondValue;
@@ -27,6 +27,6 @@ public class GcdGame {
             secondValue = firstValue % secondValue;
             firstValue = temp;
         }
-        return Math.abs(firstValue); // мало ли вдруг будеть отрицательное, поэтому модуль
+        return Math.abs(firstValue);
     }
 }

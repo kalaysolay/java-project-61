@@ -2,33 +2,26 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    private static final int QUESTIONSCOUNT = 3;
+    public static final int QUESTIONSCOUNT = 3;
+    private static String name;
 
-    /*
-        массив questions содержит в первом измерении вопрос, во втором - правильный ответ
-        Мы проверяем, если пользователь ответил на вопрос также, как и в значении массива questions[i][1],
-        то считаем отет верным
-        ..
-        calc:
-            questions[2+2][4]
-            questions[5-2][3]
-        ..
-        evengame:
-            questions[76][yes]
-            questions[31][no]
-     */
-
-    public static int getQuestionCount() {
-        return QUESTIONSCOUNT;
+    public static void aksName() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to the Brain Games!");
+        System.out.print("May I have your name? ");
+        name = sc.nextLine();
+        System.out.println("Hello, " + name + "!");
     }
 
+    public static String getName() {
+        return name;
+    }
     public static void start(String[][] questions, String task) {
-        System.out.println(task); // приветственная строка для игры
+        System.out.println(task);
         Scanner scanner = new Scanner(System.in);
-        // перебираем весь массив вопросов и выводим сам вопрос и ожидаем ответ
-        // затем сравниваем введенное значение и rightAnswer
+
         for (int i = 0; i < QUESTIONSCOUNT; i++) {
-            String questionTitle = questions[i][0]; // забираем вопрос из массива
+            String questionTitle = questions[i][0];
             String rightAnswer = questions[i][1];
             System.out.println("Question: " + questionTitle);
             System.out.print("Your answer: ");
@@ -38,11 +31,11 @@ public class Engine {
             } else {
                 System.out.println("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'."
                         + rightAnswer + "'.");
-                System.out.println("Let's try again, " + Cli.getName() + "!");
-                return; // завершаем работу метода, потому что пользоватеь дал не верный ответ
+                System.out.println("Let's try again, " + name + "!");
+                return;
             }
         }
-        System.out.println("Congratulations, " + Cli.getName() + "!");
+        System.out.println("Congratulations, " + name + "!");
 
     }
 }
